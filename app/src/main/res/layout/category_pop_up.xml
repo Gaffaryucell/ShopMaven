@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#2B2B2B">
+
+    <TextView
+        android:id="@+id/option_rating_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori 1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/option_rating_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori 2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/option_rating_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori 3"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/option_rating_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori 4"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+</LinearLayout>

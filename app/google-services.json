@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1046552272536",
+    "project_id": "shopmaven-b5550",
+    "storage_bucket": "shopmaven-b5550.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046552272536:android:d78e81100136ea44227aed",
+        "android_client_info": {
+          "package_name": "com.gaffaryucel.e_ticaret"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046552272536-jjeu5hdf41v4r0pcdsu528msu5kht1r5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaffaryucel.e_ticaret",
+            "certificate_hash": "5633f8781bf04e583e2ec8c1ced4817aa5663ea6"
+          }
+        },
+        {
+          "client_id": "1046552272536-hpedpj9s8qgir94ij758rh0gl19k609r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2tHnhirPXt_QmwS8yW6ZNj3E04Q_hOnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046552272536-hpedpj9s8qgir94ij758rh0gl19k609r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

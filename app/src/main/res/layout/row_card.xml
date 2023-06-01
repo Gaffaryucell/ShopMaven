@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="cardmodel"
+            type="com.gaffaryucel.e_ticaret.model.CardModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/cardrowback"
+        android:background="@drawable/card1">
+
+        <EditText
+            android:id="@+id/cardnumtext"
+            android:layout_width="317dp"
+            android:layout_height="37dp"
+            android:background="@color/white"
+            android:hint="your card number"
+            android:inputType="textPersonName"
+            android:text="@{cardmodel.num}"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.62" />
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/nameoncardtext"
+            android:layout_width="317dp"
+            android:layout_height="37dp"
+            android:background="@color/white"
+            android:hint="your name"
+            android:text="@{cardmodel.name}"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.757" />
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/cvv"
+            android:layout_width="144dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="109dp"
+            android:layout_marginBottom="139dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:text="@{cardmodel.cvv}"
+            android:hint="your CVV code"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:text="Click For turn the card"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:hint="create a name for your card"
+            android:id="@+id/cardnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@{cardmodel.cardname}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/mounthoncardtext"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@color/black"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="01"
+            android:text="@{cardmodel.mounth}"
+            android:textColor="@color/white"
+            android:textColorHint="#7C7676"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.685" />
+
+        <EditText
+            android:id="@+id/yearoncardtext"
+            android:layout_width="75dp"
+            android:layout_height="23dp"
+            android:background="@color/black"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="25"
+            android:textColorHint="#7C7676"
+            android:text="@{cardmodel.year}"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/slashtext"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.685" />
+
+        <TextView
+            android:id="@+id/slashtext"
+            android:layout_width="5dp"
+            android:layout_height="23dp"
+            android:background="@color/black"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="/"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/yearoncardtext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/mounthoncardtext"
+            app:layout_constraintTop_toTopOf="@+id/yearoncardtext" />
+
+        <ImageView
+            android:id="@+id/makemainimage"
+            android:layout_width="49dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

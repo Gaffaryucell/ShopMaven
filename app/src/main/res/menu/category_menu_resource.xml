@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/menu_category"
+            android:title="Kategori">
+            <menu>
+                <item
+                    android:id="@+id/menu_category_1"
+                    android:title="Kategori 1" />
+                <item
+                    android:id="@+id/menu_category_2"
+                    android:title="Kategori 2" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menu_rating"
+            android:title="Puan Ayarlama"
+            android:icon="@android:drawable/ic_menu_sort_by_size">
+            <menu>
+                <item
+                    android:id="@+id/menu_rating_1"
+                    android:title="1 Puan" />
+                <item
+                    android:id="@+id/menu_rating_2"
+                    android:title="2 Puan" />
+                <!-- Diğer puan seçeneklerini buraya ekleyebilirsiniz -->
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menu_price"
+            android:title="Fiyat Aralığı">
+            <menu>
+                <item
+                    android:id="@+id/menu_price_low"
+                    android:title="Düşük Fiyat" />
+                <item
+                    android:id="@+id/menu_price_medium"
+                    android:title="Orta Fiyat" />
+                <item
+                    android:id="@+id/menu_price_high"
+                    android:title="Yüksek Fiyat" />
+            </menu>
+        </item>
+    </menu>

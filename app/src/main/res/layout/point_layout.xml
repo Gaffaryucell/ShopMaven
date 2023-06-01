@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#2B2B2B">
+
+    <TextView
+        android:id="@+id/low_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1-3"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/mid_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3-5"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/high_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori 3"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+</LinearLayout>

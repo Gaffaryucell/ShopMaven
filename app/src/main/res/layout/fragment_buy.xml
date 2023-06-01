@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.navigationview.ui.buy.BuyFragment">
+
+        <TextView
+            android:textSize="30dp"
+            android:text="Address"
+            android:id="@+id/textViewAddressInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="30dp"
+            android:text="cardname"
+            android:id="@+id/usercardnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_weight="1"
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/orderbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="order"></Button>
+</LinearLayout>

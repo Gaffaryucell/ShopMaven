@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_messageFragment"
+            app:destination="@id/messageFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_orderDetailsForCustomer"
+            app:destination="@id/orderDetailsForCustomer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_orderDetailsForCustomer"
+            app:destination="@id/orderDetailsForCustomer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_basket"
+        android:name="com.gaffaryucel.e_ticaret.view.BasketFragment"
+        android:label="Basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_nav_basket_to_buyFragment"
+            app:destination="@id/buyFragment" />
+        <action
+            android:id="@+id/action_nav_basket_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.ProductDetailsFragment"
+        android:label="ProductDetailsFragment" >
+        <argument
+            android:name="productid"
+            app:argType="string" />
+        <argument
+            android:name="from"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.profile.ProfileFragment"
+        android:label="my account"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_createProductFragment"
+            app:destination="@id/createProductFragment" />
+        <action
+            android:id="@+id/action_nav_profile_to_incomingOrderFragment"
+            app:destination="@id/incomingOrderFragment" />
+        <action
+            android:id="@+id/action_nav_profile_to_profileDetailsFragment"
+            app:destination="@id/profileDetailsFragment" />
+        <action
+            android:id="@+id/action_nav_profile_to_customerMessagesFragment"
+            app:destination="@id/customerMessagesFragment" />
+        <action
+            android:id="@+id/action_nav_profile_to_messageOfCustomerFragment"
+            app:destination="@id/messageOfCustomerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createProductFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.CreateProductFragment"
+        android:label="CreateProductFragment" />
+    <fragment
+        android:id="@+id/incomingOrderFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.incomingorder.IncomingOrderFragment"
+        android:label="fragment_incoming_order"
+        tools:layout="@layout/fragment_incoming_order" >
+        <action
+            android:id="@+id/action_incomingOrderFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.buy.BuyFragment"
+        android:label="fragment_buy"
+        tools:layout="@layout/fragment_buy" >
+        <action
+            android:id="@+id/action_buyFragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
+        <action
+            android:id="@+id/action_buyFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.card.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.address.AddressFragment"
+        android:label="fragment_address"
+        tools:layout="@layout/fragment_address" />
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.orderdetails.OrderDetailsFragment"
+        android:label="fragment_order_details"
+        tools:layout="@layout/fragment_order_details" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailsForCustomer"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.orderdetailforcustomer.OrderDetailsForCustomer"
+        android:label="OrderDetailsForCustomer" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_orderDetailsForCustomer_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileDetailsFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.profile.profiledetails.ProfileDetailsFragment"
+        android:label="ProfileDetailsFragment" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.message.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+        <argument
+            android:name="cid"
+            app:argType="string" />
+        <argument
+            android:name="sid"
+            app:argType="string" />
+        <argument
+            android:name="from"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerMessagesFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.customermessages.CustomerMessagesFragment"
+        android:label="fragment_customer_messages"
+        tools:layout="@layout/fragment_customer_messages" >
+        <action
+            android:id="@+id/action_customerMessagesFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageOfCustomerFragment"
+        android:name="com.gaffaryucel.e_ticaret.view.navigationview.ui.customermessages.messages.MessageOfCustomerFragment"
+        android:label="fragment_message_of_customer"
+        tools:layout="@layout/fragment_message_of_customer" >
+        <action
+            android:id="@+id/action_messageOfCustomerFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
+</navigation>
