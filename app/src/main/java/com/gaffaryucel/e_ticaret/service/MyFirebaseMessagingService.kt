@@ -98,7 +98,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         val notificationBuilder = NotificationCompat.Builder(this, "channel_id")
         val pandingIntent = Intent(this,NavigationDrawerActivity::class.java)
-        pandingIntent.putExtra("from","order")
+        pandingIntent.putExtra("type","order")
         pandingIntent.putExtra("id",id)
             val pendingIntent = PendingIntent.getActivity(
                 applicationContext,
@@ -115,7 +115,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
                 .setContentText(model.description)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
-            println("equel")
 
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.notify(getNotificationId(), notificationBuilder.build())
